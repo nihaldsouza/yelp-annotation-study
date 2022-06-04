@@ -1,11 +1,4 @@
-# COLX 523: Yelp Reviews Annotations
-
-### Group 6 Team Members
-
-- Jiajing Li
-- Nihal D'Souza
-- Shengjie Zhang
-- Zhiyi Li
+# Exploring Challenges in Human Data Annotation
 
 ### Prerequisites
 
@@ -15,11 +8,11 @@ Make sure you have [Docker](https://docs.docker.com/get-docker/) and [Docker Com
 
 1. Clone the git repository to your local machine:
 
-    ```git clone git@github.ubc.ca:mds-cl-2021-22/COLX_523_group6_yelp_review_annotations.git```
+    ```git clone https://github.com/nihaldsouza/yelp-annotation-study.git```
 
 2. Change directory into the project folder:
 
-    ```cd COLX_523_group6_yelp_review_annotations```
+    ```cd yelp-annotation-study```
 
 3. Run the following command:
 
