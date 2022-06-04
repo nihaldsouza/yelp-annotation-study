@@ -1,5 +1,8 @@
 # Exploring Challenges in Human Data Annotation
 
+### Overview
+The project explores the process of human annotation, calculating inter-annotator agreement metrics and biases from 2000 Yelp Reviews annotated by 3 independent annotators on Amazon Mechanical Turk.
+
 ### Prerequisites
 
 Make sure you have [Docker](https://docs.docker.com/get-docker/) and [Docker Compose](https://docs.docker.com/compose/install/) installed and running before proceeding.
