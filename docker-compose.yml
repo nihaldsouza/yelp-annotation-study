@@ -1,0 +1,32 @@
+version: "3"
+services:
+  elasticsearch:
+    image: elasticsearch:7.16.3
+    container_name: elasticsearch
+    environment:
+       - discovery.type=single-node
+    ports: 
+       - 9200:9200
+    volumes:
+       - esdata:/usr/share/elasticsearch/data
+    healthcheck:
+        test: ["CMD", "curl", "-f", "http://localhost:9200"]
+        interval: 60s
+        timeout: 10s
+        retries: 10
+
+  streamlit:
+    build:
+      dockerfile: Dockerfile
+      context: ./
+    pull_policy: always
+    container_name: streamlit
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+    ports: 
+      - 8501:8501
+
+volumes:
+  esdata:
+    driver: local
